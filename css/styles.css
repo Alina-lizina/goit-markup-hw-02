@@ -7,7 +7,9 @@ body{
 
 header{
     display: flex;
-    padding: 24px 215px 25px 215px;   
+    padding: 24px 215px 25px 215px;  
+    background-color: #fff;
+     border: #ECECEC solid 1px; 
 }
 
 .logo {
@@ -212,6 +214,30 @@ address {
    background-color: #fff;
 }
 
+.buttons-sort{
+
+    padding: 94px 512px 19px 512px;
+    height: 38px;
+}
+
+ul.buttons-sort li{
+    display: inline-block;
+}
+
+.button-fill{
+    display: block;
+    font-size: 16px;
+    line-height: 139%;
+    padding: 6px 22px;
+    background-color:#F5F4FA;  
+    border-radius: 4px; 
+}
+
+.button-fill:active {
+    background-color: #2196F3;
+    color: #fff;
+}
+
 ul.works{
    display: block; 
    padding: 30px 200px 80px 200px;
@@ -242,21 +268,3 @@ ul.works li{
     color: #757575;
 }
 
-.buttons-sort{
-    padding: 174px 512px 34px 512px;
-}
-
-ul.buttons-sort li{
-    display: inline-block;
-    border-radius: 4px; 
-    
-}
-
-.button-fill{
-    display: block;
-    font-size: 16px;
-    line-hight: 139%;
-    padding: 6px 22px;
-    background-color:#F5F4FA  
-   
-}
