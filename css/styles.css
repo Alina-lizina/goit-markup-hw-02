@@ -1,7 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #F5F5F5;
-    color: #212121;
+    font-size: 14px;
+    letter-spacing: 0.03rem;
     width: 1615px;
 }
 
@@ -9,25 +16,34 @@ header{
     display: flex;
     padding: 24px 215px 25px 215px;  
     background-color: #fff;
-     border: #ECECEC solid 1px; 
+    border: #ECECEC solid 1px; 
 }
 
 .logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     color: #000;
-    padding-right: 68px;
+    padding-right: 60px;
     vertical-align: middle;
+    text-decoration: none;
 }
+
+.logo-footer{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    color: #fff;
+} 
 
 ul.navigation{
     display: block;
     padding-top: 8px;
     padding-bottom: 7px;
-    font-size: 14px;
     font-weight: 500;
 }
 
+.current{
+    color:#2196F3;
+}
 
 ul.navigation li {
     display: inline-block;
@@ -39,21 +55,22 @@ ul.contact{
     display: block;
     padding-top: 8px;
     padding-bottom: 7px;
-    font-size: 14px;
     font-weight: 500;
     position: relative;
-    margin-left: 294px;
+    margin-left: 260px;
 }
 
 ul.contact li {
     display: inline-block;
     margin-left: 25px;
     margin-right: 25px;
+    text-decoration: none;
 }
 
-header A {color: #212121; text-decoration: none;}
-A:hover { color: #2196F3; text-decoration: none;}
-A:hover.logo{ color: #000; text-decoration: none;}
+nav a {color: #212121; text-decoration: none;} 
+.contact a {color: #757575; text-decoration: none;}
+a:hover {color: #2196F3; text-decoration: none;}
+a:hover.logo{color: #000; text-decoration: none;}
 
 
 .main-banner{
@@ -90,16 +107,16 @@ A:hover.logo{ color: #000; text-decoration: none;}
 .description{   
     display: flex; 
     padding: 94px 200px 0 200px;
-    font-size: 14px;
 }
 
 ul.description-fact{
     display: block;
+    color: #212121;
 }
 
 ul.description-fact li{
     display: inline-block;
-    width: 270px;
+    width: 300px;
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: top;
@@ -138,6 +155,7 @@ ul.what-we-do-images li{
     font-weight: 700;
     text-align: center;
     margin-bottom: 50px;
+    color: #212121;
 }
 
 .team{
@@ -151,12 +169,14 @@ ul.what-we-do-images li{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    color: #212121;
 }
 
 ul.team-info{
     display: block;
     margin-top: 50px;
     margin-top: 94px;
+    color: #212121;
 }
 
 ul.team-info li{
@@ -189,7 +209,7 @@ ul.team-info li{
     padding-bottom: 30px;
 }
 
-footer A {color: #ffffff99; text-decoration: none;}
+footer a {color: #ffffff99; text-decoration: none;}
 
 footer{
     background-color: #2F303A;
@@ -200,7 +220,6 @@ footer{
 address {
     display: block;
     padding-top: 20px;
-    font-size: 14px;
     line-height: 146%; 
 }
 
@@ -251,7 +270,7 @@ ul.works li{
     border: #eee solid 1px;
 }
 
-.works h3{
+.works h2{
     display: block;
     padding: 20px 24px 8px 24px;
     font-size: 18px;
