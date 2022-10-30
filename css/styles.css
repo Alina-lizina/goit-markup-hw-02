@@ -1,20 +1,11 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #F5F5F5;
     font-size: 14px;
     letter-spacing: 0.03rem;
-    width: 1615px;
 }
 
 header{
     display: flex;
-    padding: 24px 215px 25px 215px;  
     background-color: #fff;
     border: #ECECEC solid 1px; 
 }
@@ -23,7 +14,6 @@ header{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     color: #000;
-    padding-right: 60px;
     vertical-align: middle;
     text-decoration: none;
 }
@@ -34,59 +24,38 @@ header{
     color: #fff;
 } 
 
-ul.navigation{
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    font-weight: 500;
-}
-
 .current{
     color:#2196F3;
 }
 
-ul.navigation li {
+.navigation-button{
     display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-ul.contact{
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 7px;
     font-weight: 500;
-    position: relative;
-    margin-left: 260px;
+    color: #212121;
 }
 
-ul.contact li {
+.contact-button{
     display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 nav a {color: #212121; text-decoration: none;} 
 .contact a {color: #757575; text-decoration: none;}
-a:hover {color: #2196F3; text-decoration: none;}
+header a:hover {color: #2196F3; text-decoration: none;}
 a:hover.logo{color: #000; text-decoration: none;}
 
 
 .main-banner{
     background-color: #2F303A;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
 .main-title{
     color: #FFFFFF;
-    padding-top: 200px;
     font-size: 44px;
     width: 900px;
-    line-height: 116%;
+    line-height: 1.36;
     align-self: center;
     font-weight: 900;
     text-transform: uppercase;
@@ -94,75 +63,43 @@ a:hover.logo{color: #000; text-decoration: none;}
 
 .main-button{
     cursor: pointer;
-    margin-top: 30px;
-    width: 216px;
-    height: 50px;
     border-radius: 4px;
     background-color: #2196F3;
     align-self: center ;
     color: #fff;
     font-size: 16px;
+    line-height: 1.875;
 }
 
-.description{   
-    display: flex; 
-    padding: 94px 200px 0 200px;
-}
-
-ul.description-fact{
-    display: block;
+.description-fact{
     color: #212121;
-}
-
-ul.description-fact li{
     display: inline-block;
     width: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
     vertical-align: top;
+    font-weight: 700;
 }
 
-.description-title{
-    font-weight: 700;
-    padding-bottom: 10px;
-}
 
 .description-text{
     color: #757575;
     font-weight: 300;
-    line-height: 146%;
-}
-
-.what-we-do{
-    padding: 94px 200px;
-    display: flex; 
-    flex-direction: column;   
-}
-
-ul.what-we-do-images{
-    display: block;   
-}
-
-ul.what-we-do-images li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-
+    line-height: 1.72;
 }
 
 .what-we-do-title{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
     color: #212121;
 }
 
+.what-we-do-image{
+    display: inline-block;
+
+}
+
 .team{
-    display: flex;
-    flex-direction: column;
     background-color: #F5F4FA;
-    padding: 94px 200px;
 }
 
 .team-title{
@@ -172,19 +109,8 @@ ul.what-we-do-images li{
     color: #212121;
 }
 
-ul.team-info{
-    display: block;
-    margin-top: 50px;
-    margin-top: 94px;
-    color: #212121;
-}
-
-ul.team-info li{
+.team-info{
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-weight: 300;
-    line-height: 146%;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
@@ -192,98 +118,70 @@ ul.team-info li{
     box-shadow: 0 2px 1px rgba(0,0,0,0.2);
 }
 
-.team-description{
+.team-description-title{
+    color: #212121;
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-description-text{
+    color: #757575;
     font-size: 16px;
     font-weight: 400;
 }
 
-.team-description h3{
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-weight: 500;
-}
-
-.team-description p{
-    color: #757575;
-    padding-bottom: 30px;
-}
-
-footer a {color: #ffffff99; text-decoration: none;}
-
 footer{
     background-color: #2F303A;
     display: block;
-    padding: 60px 0 60px 215px;
+    line-height: 1.714;
 }
 
-address {
-    display: block;
-    padding-top: 20px;
-    line-height: 146%; 
-}
+footer a {color: #ffffff99; text-decoration: none;}
 
 .address{
     color:#ffffff;
 }
 
 .portfolio{
-   display: flex;
-   flex-direction: column; 
    background-color: #fff;
 }
-
-.buttons-sort{
-
-    padding: 94px 512px 19px 512px;
-    height: 38px;
+.portfolio-button-sort{
+display: inline-block;
 }
-
-ul.buttons-sort li{
-    display: inline-block;
-}
-
-.button-fill{
-    display: block;
+.portfolio-button{
+    font-family: inherit;
     font-size: 16px;
-    line-height: 139%;
-    padding: 6px 22px;
-    background-color:#F5F4FA;  
+    font-weight:500;
+    line-height: 1.625;
+    vertical-align: middle;
+    background-color:#F5F4FA; 
     border-radius: 4px; 
 }
 
-.button-fill:active {
+.portfolio-button:hover {
     background-color: #2196F3;
     color: #fff;
 }
 
-ul.works{
-   display: block; 
-   padding: 30px 200px 80px 200px;
-   padding-left: 200px;
-}
 
-ul.works li{
+.works {
     display: inline-block;
-    margin: 15px;
     background-color: #fff;
     border: #eee solid 1px;
 }
 
-.works h2{
-    display: block;
-    padding: 20px 24px 8px 24px;
+.portfolio-title{
+    color: #212121;
     font-size: 18px;
     font-weight: 700;
-    line-height: 171%;
-    margin-bottom: 4px
+    line-height: 2;
 }
 
-.works p{
-    display: block;
-    padding: 0 24px 20px 24px;
-    font-size: 16px;
-    line-height: 160%;
+.portfolio-text{
     color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875;
 }
 
