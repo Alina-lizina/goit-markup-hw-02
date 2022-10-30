@@ -149,6 +149,7 @@ footer a {color: #ffffff99; text-decoration: none;}
 display: inline-block;
 }
 .portfolio-button{
+    cursor: pointer;
     font-family: inherit;
     font-size: 16px;
     font-weight:500;
