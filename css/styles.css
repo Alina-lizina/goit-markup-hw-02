@@ -6,8 +6,12 @@ body{
 
 header{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
     background-color: #fff;
-    border: #ECECEC solid 1px; 
+    border-bottom: #ECECEC solid 1px; 
 }
 
 .logo {
@@ -27,17 +31,28 @@ header{
 .current{
     color:#2196F3;
 }
-
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    list-style-type: none;
+}
 .navigation-button{
-    display: inline-block;
     font-weight: 500;
     color: #212121;
 }
-
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    list-style-type: none;
+}
 .contact-button{
-    display: inline-block;
     text-decoration: none;
     font-weight: 500;
+    color: #757575;
 }
 
 nav a {color: #212121; text-decoration: none;} 
@@ -47,14 +62,15 @@ a:hover.logo{color: #000; text-decoration: none;}
 
 
 .main-banner{
+    display: flex;
+    flex-direction: column;
     background-color: #2F303A;
     text-align: center;
 }
 
 .main-title{
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 44px;
-    width: 900px;
     line-height: 1.36;
     align-self: center;
     font-weight: 900;
@@ -62,13 +78,23 @@ a:hover.logo{color: #000; text-decoration: none;}
 }
 
 .main-button{
+    font-family: inherit;
     cursor: pointer;
     border-radius: 4px;
+    border: none;
     background-color: #2196F3;
     align-self: center ;
     color: #fff;
     font-size: 16px;
     line-height: 1.875;
+}
+
+.description-facts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    list-style-type: none;
 }
 
 .description-fact{
@@ -93,8 +119,12 @@ a:hover.logo{color: #000; text-decoration: none;}
     color: #212121;
 }
 
-.what-we-do-image{
-    display: inline-block;
+.what-we-do-images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    list-style-type: none;
 }
 
 .team{
@@ -108,8 +138,15 @@ a:hover.logo{color: #000; text-decoration: none;}
     color: #212121;
 }
 
+.team-info-columns{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    list-style-type: none;
+}
+
 .team-info{
-    display: inline-block;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
@@ -131,6 +168,13 @@ a:hover.logo{color: #000; text-decoration: none;}
     text-align: center;
 }
 
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-style: normal;
+}
+
 footer{
     background-color: #2F303A;
     display: block;
@@ -140,15 +184,20 @@ footer{
 footer a {color: #ffffff99; text-decoration: none;}
 
 .address{
-    color:#ffffff;
+    color:#fff;
 }
 
 .portfolio{
    background-color: #fff;
 }
-.portfolio-button-sort{
-display: inline-block;
+.portfolio-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    list-style-type: none;
 }
+
 .portfolio-button{
     cursor: pointer;
     font-family: inherit;
@@ -158,6 +207,7 @@ display: inline-block;
     vertical-align: middle;
     background-color:#F5F4FA; 
     border-radius: 4px; 
+    border: none;
 }
 
 .portfolio-button:hover {
@@ -165,9 +215,14 @@ display: inline-block;
     color: #fff;
 }
 
-
-.works {
-    display: inline-block;
+.works{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;  
+}
+.work{
     background-color: #fff;
     border: #eee solid 1px;
 }
